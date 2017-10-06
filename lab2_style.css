@@ -1,0 +1,52 @@
+h1 {
+    color: orangered;
+    font-size: 32px;
+
+}
+
+p:first-letter {
+    color: red;
+    font-size: 32px;
+}
+
+em {
+    background-color: green;
+}
+
+div#allotment > h2  {  /* огород */
+    color: orange;
+}
+
+div#allotment ul  {  /* огород */
+    color: black;
+    font-weight: bold; 
+}
+
+div#allotment  ol.fruits-list  {  /* огород */
+    color: gray;
+}
+
+div#allotment  ol.vegetables-list  {  /* огород */
+    color: red;
+}
+
+div#warehouse > h2  { /* склад */
+    color: blue;
+}
+
+div#warehouse ul  {  /* склад */
+    color: black;
+    font-weight: bold; 
+}
+
+div#warehouse  ol.fruits-list  {  /* склад */
+    color: green;
+}
+
+div#warehouse  ol.vegetables-list  {  /* склад */
+    color: red;
+}
+
+table tbody tr:first-child {
+    color: darkorange;
+}
