@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Завдання 3</title>
+    <style type="text/css">
+        body {
+            color: lightslategray;
+        }
+
+        table {
+            width: 900px; /* Ширина таблицы */
+            border-collapse: collapse; /* Убираем двойные линии между ячейками */
+        }
+        td, th {
+            padding: 3px; /* Поля вокруг содержимого таблицы */
+            border: 1px solid blue; /* Параметры рамки */
+        }
+        th {
+            background: #b0e0e6; /* Цвет фона */
+        }
+  </style>
+</head>
+<!--rev dev-->
+<body>
+    <table>
+        <tr>
+            <td rowspan="2">Фото</td>
+            <td rowspan="2">Виды работ</td>
+            <td rowspan="2">Количество</td>
+            <td rowspan="2">Ед. Изм.</td>
+            <td>Цена безнал.<input type="radio" name="price" value="priceN"></td>
+            <td rowspan="2">СУММА</td>
+        </tr>
+        <tr>
+            <td>Цена нал.<input type="radio" name="price" value="priceB" checked="checked"></td>
+        </tr>
+        <tr>
+            <td colspan="6" style="background-color: blue; color: white">Цена на оборудование</td>
+        </tr>
+        <tr>
+            <td><img src="img/fig1.jpg" alt="photo" width="32px"></td>
+            <td><a href="item1.html">Кондиционер настенный Cooper&amp;Hunter CH-S09LHR2</a></td>
+            <td><input type="number" placeholder="0" size="5"></td>
+            <td>шт.</td>
+            <td>0 грн.</td>
+            <td>0.00 грн.</td>            
+        </tr>
+        <tr>
+            <td><img src="img/fig1.jpg" alt="photo" width="32px"></td>
+            <td><a href="item2.html">Кондиционер настенный Cooper&amp;Hunter CH-S09LHR2 с установкой</a></td>
+            <td><input type="number" placeholder="0" size="5"></td>
+            <td>шт.</td>
+            <td>200 грн.</td>
+            <td>0.00 грн.</td>
+        </tr>
+        <tr>
+            <td colspan="6" style="background-color: blue; color: white">Группа 1</td>
+        </tr>
+        <tr>
+            <td><img src="img/fig1.jpg" alt="photo" width="32px"></td>
+            <td><a href="serv1.html">Услуга 1</a></td>
+            <td><input type="number" placeholder="0" size="5"></td>
+            <td>шт.</td>
+            <td>20 грн.</td>
+            <td>0.00 грн.</td>
+        </tr>        
+        <tr>
+            <td colspan="4" style="border: 0px"></td>
+            <td>ВСЕГО</td>
+            <td>0.00 грн.</td>           
+        </tr>
+    </table>
+
+    <h2>Добавление товаров и услуг</h2>
+    <form action="">
+        <input type="radio" value="item" name="itemServ" checked="checked">Товар<br>
+        <input type="radio" value="serv" name="itemServ">Услуга<br>
+        <input type="file" value="Добавить фото">Добавить фото<br>
+        <input type="text" placeholder="Название товара/услуги" value=""><br>
+        <input type="text" placeholder="Цена товара/услуги нал." value=""><br>
+        <input type="text" placeholder="Цена товара/услуги безнал." value=""><br>
+        <input type="submit" value="Добавить товар/услугу"><br>
+    </form>
+
+</body>
+
+</html>
