@@ -47,6 +47,16 @@ div#warehouse  ol.vegetables-list  {  /* склад */
     color: red;
 }
 
-table tbody tr:first-child {
-    color: darkorange;
+table thead {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+table tbody > tr > td:first-child {
+    color: red;
+}
+
+table tbody > tr > td:first-child ~ td {
+    background-color: green;
 }
