@@ -1,7 +1,6 @@
 h1 {
     color: orangered;
     font-size: 32px;
-
 }
 
 p:first-letter {
@@ -51,7 +50,6 @@ table thead {
     font-weight: bold;
     text-align: center;
 }
-
 
 table tbody > tr > td:first-child {
     color: red;
