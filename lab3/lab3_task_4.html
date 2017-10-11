@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>lab2_5</title>
+    <style>
+        input {
+            display: none;
+        }
+        label {
+            text-decoration-line: underline;
+        }
+        label[for="red"] {
+            color: red;
+        }
+        label[for="green"] {
+            color: green;
+        }
+        label[for="blue"] {
+            color: blue;
+        }
+        span {            
+            display: none;
+            border-radius: 5px;
+            color: white;
+            padding: 2px 10px;
+        }
+        input[id="red"]:checked ~ span.red {
+            display: inline-block;
+            background-color: red;
+        }
+        input[id="green"]:checked ~ span.green {
+            display: inline-block;
+            background-color: green;
+        }
+        input[id="blue"]:checked ~ span.blue {
+            display: inline-block;
+            background-color: blue;
+        }
+        input[id="red"]:checked ~ label[for="red"] {
+            opacity: .2;
+        }
+        input[id="green"]:checked ~ label[for="green"] {
+            opacity: .2;
+        }
+        input[id="blue"]:checked ~ label[for="blue"] {
+            opacity: .2;
+        }        
+    </style>
+</head>
+<body>
+
+<form action="#">
+    <div>
+        <input type="checkbox" id="red">
+        <input type="checkbox" id="green">
+        <input type="checkbox" id="blue">
+
+        <label for="red">красные</label>
+        <label for="green">зеленые</label>
+        <label for="blue">синие</label>
+
+        <span class="red">красные</span>
+        <span class="green">зеленые</span>
+        <span class="green">зеленые</span>
+        <span class="red">красные</span>
+        <span class="blue">синие</span>
+        <span class="green">зеленые</span>
+        <span class="red">красные</span>
+        <span class="blue">синие</span>
+        <span class="red">красные</span>
+        <span class="green">зеленые</span>
+        <span class="blue">синие</span>
+    </div>
+</form>
+
+</body>
+</html>
