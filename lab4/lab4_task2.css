@@ -22,8 +22,6 @@
         input#smallFont:checked ~ article {               
             font-size: smaller;
         }
-
-
         header, footer {
             margin: 10px;
             padding: 10px;
