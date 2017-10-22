@@ -48,6 +48,9 @@ input#view-list:checked ~ .item {
     padding: 0px;
     font-size: 14px;
 }
+.item {
+    border: 4px solid white;
+}
 
 .item:hover {
     border: 4px solid lightcoral;
