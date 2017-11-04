@@ -7,7 +7,6 @@
 
 body {
     min-width: 1280px;
-    /*text-overflow: hidden;*/
     background-color: #272f45;
     font-family: Roboto, Helvetica, Arial, sans-serif;    
     color: #a9a9a9;
@@ -18,7 +17,6 @@ header {
     display: flex;   
     align-items: center;
     justify-content: space-between;
-    /*text-overflow: hidden;*/
 }
 
 /*.logo img {
@@ -121,7 +119,6 @@ header {
 }
 
 .item-m .item__description-left {
-    /*font-family: "Passion One", Helvetica, Arial;*/
     font-size:28px;
     text-align: right;
     color: #fffaf0;    
@@ -138,7 +135,6 @@ header {
 }
 
 .item-m .item__description-right {
-    /*font-family: "Passion One", Helvetica, Arial;*/
     font-size:28px;
     text-align: left;
     color: #fffaf0;    
@@ -177,7 +173,6 @@ header {
     font-size:20px;
     color: #fffaf0;
     margin-bottom: 20px;
-    /*margin-left: 20px;*/
     position: absolute;
     top: 20%;
     z-index: 10;
@@ -194,7 +189,6 @@ header {
     font-size:20px;
     color: #fffaf0;
     margin-bottom: 20px;
-    /*margin-left: 20px;*/
     position: absolute;
     top: 20%;
     z-index: 10;
@@ -204,7 +198,6 @@ header {
 .item__description-low {
     color: #fffaf0;
     margin-top: 170px;
-    /*margin-left: 20px;*/
     position: absolute;
     top: 20%;
     z-index: 10;
@@ -278,13 +271,6 @@ header {
     width: 30px;
     height: 30px;
 }
-
-/*.search::after {
-    font-size: 36px;
-    content: '⌕';
-    color: red;
-    z-index: +10000;
-}*/
 
 .email {
     border: 2px solid #a9a9a9;
