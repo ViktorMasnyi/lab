@@ -1,0 +1,178 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+main {
+    width: 620px;
+    height: 150px;
+	margin: 50px auto;
+	background: #f0f0f0;	
+	/*box-shadow: 0 0 5px rgba(0, 0, 0, .3);	    */
+    /*border: 1px solid darkgray;*/
+    text-align: center;
+    position: relative;
+}
+
+.item{
+	background: #fff;
+	width: 150px;
+	height: 150px;    
+	text-align: center;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+	margin: 0 5px 5px 0;
+    float: left;
+    /*position: relative;*/
+    
+}
+/*.item > div{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}*/
+
+/* front side of a cake card */
+.front{
+	transition: all .5s;
+	position: absolute;
+	/*-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;*/
+}
+.front:hover{
+	box-shadow: 0 0 10px #000;
+}
+
+figure > img {
+    /*display: block;*/
+    height: 150px;
+    width: 150px;
+    margin: 0px;    
+}
+
+/* back side of a cake card */
+
+.back{
+	width: 300px;
+	height: auto;
+	display: block;
+	-webkit-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+	/*-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;*/
+	background: #ccc;
+	color: #000;
+	transition: all .5s;
+	padding: 10px;
+	text-align: justify;
+	opacity: 0;           
+}
+
+.back > img {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 250px;
+}
+.back li {
+    list-style-type: none; /* Убираем маркеры */
+    margin-left: 15px;
+   }
+
+.item > div:hover .front{
+	-webkit-transform: rotateX(180deg);
+	transform: rotateX(180deg);
+}
+
+.item:hover .back{
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+	opacity: 1;    
+    left: -50%;       
+    margin: 0px auto;
+    border: 10px solid white;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    position: relative;
+    z-index: +5000;
+    
+}
+
+/* modal window */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    transition: opacity 200ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: +500;
+}
+
+.popup {
+    margin: 100px auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #666;
+    width: 400px;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+    position: relative;
+    text-align: center;
+    z-index: +1000;
+}
+
+a > img {
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+}
+
+.popup img {
+    width: auto;
+    height: 300px;
+}
+
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.close {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0px;
+    right: 35px;
+    opacity: 0.8;
+    transition: all 200ms;
+    font-size: 64px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #666;
+}
