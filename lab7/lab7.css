@@ -47,18 +47,18 @@ header {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.item-l .item-heading {
+.item-l .item__heading {
     
     font-weight: 700;
     font-size: 60px;
     margin-bottom: 40px;
 }
 
-.item-l .description-text {
+.item-l .item__descriptionText {
     margin-bottom: 200px;
 }
 
-.item-l .item-description {
+.item-l .item__description {
     font-size:30px;
     color: #fffaf0;
     margin-bottom: 20px;
@@ -110,17 +110,17 @@ header {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.item-m .item-heading {    
+.item-m .item__heading {    
     font-weight: 700;
     font-size: 50px;
     margin-bottom: 20px;
 }
 
-.item-description-left .description-text {
+.item__description-left .description-text {
     margin-bottom: 70px;
 }
 
-.item-m .item-description-left {
+.item-m .item__description-left {
     /*font-family: "Passion One", Helvetica, Arial;*/
     font-size:28px;
     text-align: right;
@@ -133,11 +133,11 @@ header {
     height: 60%;
 }
 
-.item-description-right .description-text {
+.item__description-right .description-text {
     margin-bottom: 100px;
 }
 
-.item-m .item-description-right {
+.item-m .item__description-right {
     /*font-family: "Passion One", Helvetica, Arial;*/
     font-size:28px;
     text-align: left;
@@ -166,13 +166,13 @@ header {
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.item-s .item-heading {    
+.item-s .item__heading {    
     font-weight: 700;
     font-size: 35px;
     margin-bottom: 35px;
 }
 
-.item-s .item-description {
+.item-s .item__description {
     font-family: "Passion One";
     font-size:20px;
     color: #fffaf0;
@@ -184,13 +184,13 @@ header {
     width: 100%;
 }
 
-.item-s .item-heading {    
+.item-s .item__heading {    
     font-weight: 700;
     font-size: 35px;
     margin-bottom: 35px;
 }
 
-.item-s .item-description {    
+.item-s .item__description {    
     font-size:20px;
     color: #fffaf0;
     margin-bottom: 20px;
@@ -217,7 +217,7 @@ header {
     padding: 20px;
 }
 
-.subscribe-form {
+.subscribeForm {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -226,7 +226,7 @@ header {
     font-size:24px;    
 }
 
-.nav-bar {
+.navBar {
     width: 1160px;    
     display: flex;
     justify-content: center;
@@ -234,18 +234,18 @@ header {
     list-style-type: none;
 }
 
-.nav-bar a {
+.navBar .navBar__item {
     padding: 0px 10px;
     text-decoration-line: none;
-    color: darkgrey;    
+    color: #a9a9a9;    
 }
 
-.nav-bar a:hover {
+.navBar .navBar__item:hover {
     color: #87cefa;
     transition: .4s;
 }
 
-.nav-bar li:not(:first-child)::before {
+.navBar li:not(:first-child)::before {
     content: '● ';
 }
 
