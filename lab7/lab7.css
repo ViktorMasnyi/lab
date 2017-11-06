@@ -1,14 +1,15 @@
 @font-face {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    src: url(https://fonts.gstatic.com/s/roboto/v18/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+  font-family: 'Didact Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Didact Gothic Regular'), local('DidactGothic-Regular'), url(https://fonts.gstatic.com/s/didactgothic/v11/v8_72sD3DYMKyM0dn3LtWmYKogTrBb-Yb2DFwx30qLM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
 body {
     min-width: 1280px;
     background-color: #272f45;
-    font-family: Roboto, Helvetica, sans-serif;    
+    font-family: MyriadProRegular, Helvetica, sans-serif;    
     color: #a9a9a9;
 }
 
@@ -53,31 +54,34 @@ header {
 .item-l .item__heading {
     
     font-weight: 700;
-    font-size: 60px;
+    font-size: 90px;
     margin-bottom: 40px;
 }
 
 .item-l .item__descriptionText {
-    margin-bottom: 200px;
+    /*margin-bottom: 170px;*/
 }
 
 .item-l .item__description {
-    font-size:30px;
+    font-size:35px;
+    font-weight: 100;
     color: #fffaf0;
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 60px;
     position: absolute;
-    top: 20%;
+    top: 15%;
     z-index: 10;
+    height: 480px;
     width: 40%;
 }
 
-.button-link--l {
-    border: 2px solid #b8860b;
+.button-link--l,
+.button-link--m,
+.button-link--s {
+    border: 3px solid #eec9a2;
     color: #ccc;
-    background-color: #181818;
     text-decoration: none;
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 .button-link--l:hover,
@@ -86,6 +90,11 @@ header {
     color: #ccc;
     background-color: #333;
     transition: .4s;
+}
+
+.item-l .button-link--l {
+    position: absolute;
+    bottom: 0px;
 }
 
 .badge {    
@@ -101,7 +110,7 @@ header {
     position: absolute;
     left: 1027px;
     top: 47px;
-    width: 1302px;
+    width: 132px;
     height: 135px;
     z-index: 16;
 }
@@ -114,7 +123,7 @@ header {
 }
 
 .item-m--left {
-    background-color: #6068a3;
+    background-color: #60a8a3;
 }
 
 .item-m--right {
@@ -132,7 +141,7 @@ header {
 }
 
 .item-m .item__description-left {
-    font-size:28px;
+    font-size:22px;
     text-align: right;
     color: #fffaf0;    
     position: absolute;
@@ -143,16 +152,22 @@ header {
     height: 60%;
 }
 
-.item__description-right .button-link--m {
-    margin-top: 62px;
+.item__description-left .button-link--m {
+    /*margin-top: 30px;*/
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
 }
 
-.item__description-left .button-link--m {
-    margin-top: 30px;
+.item__description-right .button-link--m {
+    /*margin-top: 62px;*/
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
 }
 
 .item-m .item__description-right {
-    font-size:28px;
+    font-size:22px;
     text-align: left;
     color: #fffaf0;    
     position: absolute;
@@ -163,21 +178,12 @@ header {
     height: 60%;
 }
 
-.button-link--m {
-    display: inline-block;
-    border: 2px solid #b8860b;
-    /*text-decoration: none;*/
-    text-decoration: none;
-    padding: 20px;
-    bottom: 0px;
-}
-
 .item-s,
 .item-s__img {
     width: 360px;
     height: 440px;
     text-align: center;
-    font-family: Helvetica, sans-serif;    
+    font-family: MyriadProRegular, Helvetica, sans-serif;    
 }
 
 .item-s--left {
@@ -215,11 +221,11 @@ header {
 }
 
 .item-s .item__description {    
-    font-size:20px;
+    font-size:16px;
     color: #fffaf0;
     margin-bottom: 20px;
     position: absolute;
-    top: 20%;
+    top: 15%;
     z-index: 10;
     width: 100%;
 }
@@ -231,12 +237,6 @@ header {
     top: 20%;
     z-index: 10;
     width: 100%;
-}
-
-.button-link--s {
-    border: 2px solid #b8860b;
-    text-decoration: none;
-    padding: 20px;
 }
 
 .subscribe-form {
@@ -299,12 +299,16 @@ header {
     z-index: 10000;
 }
 
+.search:focus {
+    outline: none;
+}
+
 .lookingGlass {
     position: relative;
-    left: 30px;
-    top: 45px;
-    width: 30px;
-    height: 30px;
+    left: 45px;
+    top: 10px;
+    width: 35px;
+    height: 35px;
 }
 
 .email {
