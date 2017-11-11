@@ -1,4 +1,3 @@
-
 (function () {
     var x = 0.5;
 var res;

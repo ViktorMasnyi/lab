@@ -1,16 +1,5 @@
 (function () {
-    var QUARTER = 0.25,
-        DIME = 0.1,
-        NICKEL = 0.05,
-        PENNY = 0.01;
     var left = prompt('put ammount here:', 0);
-
-    var nQuarters = 0,
-        nDimes = 0,
-        nNickels = 0,
-        nPennies = 0,
-        remains = 0,
-        coins = 0;
     
         var makeChange = function(total) {
 
