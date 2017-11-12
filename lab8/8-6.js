@@ -27,26 +27,7 @@ window.onload = function () {
         }
     return arrD;
     }
-    // WORKING  - NOT UNEVERSAL
-    // function createTable(arr, id) { 
-    //     var body = document.getElementById(id);
-    //     var tbl = document.createElement('table');
-    //     tbl.style.width = '100%';
-    //     tbl.setAttribute('border', '1');
-    //     var tbdy = document.createElement('tbody');
-    //     for (var i = 0; i < m; i++) { //m
-    //         var tr = document.createElement('tr');
-    //         for (var j = 0; j < n; j++) { //n
-    //             var td = document.createElement('td');
-    //             td.innerHTML = arr[i][j];                
-    //             //td.appendChild(document.createTextNode('\u0020'));                
-    //             tr.appendChild(td);            
-    //         }
-    //         tbdy.appendChild(tr);
-    //     }
-    //     tbl.appendChild(tbdy);
-    //     body.appendChild(tbl);
-    // } 
+    
     function createTable(arr, id) {
         var n = arr.length;
         var m = arr[0].length;
@@ -60,8 +41,7 @@ window.onload = function () {
                 var tr = document.createElement('tr');
                 for (var j = 0; j < m; j++) { //n
                     var td = document.createElement('td');
-                    td.innerHTML = arr[i][j];                
-                    //td.appendChild(document.createTextNode('\u0020'));                
+                    td.innerHTML = arr[i][j];                                   
                     tr.appendChild(td);            
                 }
                 tbdy.appendChild(tr);
@@ -71,8 +51,7 @@ window.onload = function () {
             var tr = document.createElement('tr');
             for (var j = 0; j < n; j++) { //n
                     var td = document.createElement('td');
-                    td.innerHTML = arr[j];                
-                    //td.appendChild(document.createTextNode('\u0020'));                
+                    td.innerHTML = arr[j];               
                     tr.appendChild(td);            
                 }
                 tbdy.appendChild(tr);
@@ -80,29 +59,9 @@ window.onload = function () {
         tbl.appendChild(tbdy);
         body.appendChild(tbl);
     }
-    //     function createTableD(arr) {
-    //     var body = document.getElementById('body');
-    //     var tbl = document.createElement('table');
-    //     tbl.style.width = '100%';
-    //     tbl.setAttribute('border', '1');
-    //     var tbdy = document.createElement('tbody');
-    //     for (var i = 0; i < m; i++) {
-    //         var tr = document.createElement('tr');
-    //         for (var j = 0; j < n; j++) {
-    //             var td = document.createElement('td');
-    //             td.innerHTML = arrD[i][j];                
-    //             td.appendChild(document.createTextNode('\u0020'));                
-    //             tr.appendChild(td);            
-    //         }
-    //         tbdy.appendChild(tr);
-    //     }
-    //     tbl.appendChild(tbdy);
-    //     body.appendChild(tbl);
-    // }   
+    
     arrB = createArrB();
     addD = createArrD(arrB);
-    //alert(arrD);
     createTable(arrB, 'arrB');
     createTable(arrD, 'arrD');
-    //createTable(arrD);
 }
