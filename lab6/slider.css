@@ -5,9 +5,10 @@
     perspective: 650px;
     display: inline-block;
     text-align: left;
-    position: relative;
+    /*position: static;*/
     margin-bottom: 22px;
-    /*z-index: 1;*/
+    /*z-index: -1;*/
+    opacity: .99;
 }
 
 .csslider > input {
@@ -132,7 +133,7 @@
 }
 
 .csslider > .navigation label:hover:after {
-    opacity: 1;
+    opacity: .98;
 }
 
 .csslider > .navigation label:after {
@@ -177,7 +178,7 @@
 .csslider > input:nth-of-type(9):checked ~ .navigation label:nth-of-type(9):after,
 .csslider > input:nth-of-type(10):checked ~ .navigation label:nth-of-type(10):after,
 .csslider > input:nth-of-type(11):checked ~ .navigation label:nth-of-type(11):after {
-    opacity: 1;
+    opacity: .97;
 }
 
 .csslider > .arrows {

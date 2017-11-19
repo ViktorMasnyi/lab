@@ -32,7 +32,7 @@ main {
 	/*box-shadow: 0 0 5px rgba(0, 0, 0, .3);	    */
     /*border: 1px solid darkgray;*/
     text-align: center;
-    position: relative;
+    position: relative;  
 }
 
 .item{
@@ -76,9 +76,9 @@ figure > img {
 .back{
 	width: 300px;
 	height: auto;
-	display: block;
-	-webkit-transform: rotateX(180deg);
-	transform: rotateX(180deg);
+	display: none;
+	/*-webkit-transform: rotateX(180deg);
+	transform: rotateX(180deg);*/
 	/*-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;*/
 	background: #ccc;
@@ -86,7 +86,8 @@ figure > img {
 	transition: all .5s;
 	padding: 10px;
 	text-align: justify;
-	opacity: 0;           
+	opacity: 1;           
+    /*z-index: +50;*/
 }
 
 .back > img {
@@ -100,22 +101,23 @@ figure > img {
     margin-left: 15px;
    }
 
-.item > div:hover .front{
+/*.item > div:hover .front{
 	-webkit-transform: rotateX(180deg);
 	transform: rotateX(180deg);
-}
+}*/
 
 .item:hover .back{
-	-webkit-transform: rotateX(0deg);
+	/*-webkit-transform: rotateX(0deg);
 	transform: rotateX(0deg);
-	opacity: 1;    
+	opacity: 1;    */
     left: -50%;       
     margin: 0px auto;
     border: 10px solid white;
     padding: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, .4);
     position: relative;
-    z-index: +5000;
+    z-index: +500;
+    display: block;
     
 }
 
