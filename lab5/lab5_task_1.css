@@ -39,7 +39,6 @@ input#view-list:checked ~ .item {
     font-size: 14px;
 }
 
-
 #view-table:checked ~ .item {
     float: left;
     width: 300px;
@@ -54,6 +53,11 @@ input#view-list:checked ~ .item {
 
 .item:hover {
     border: 4px solid lightcoral;
+}
+
+img:hover {
+    box-shadow: 0 0 10px #000;
+    transition-duration: 1s;
 }
 
 .item-description {    

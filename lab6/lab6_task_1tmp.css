@@ -27,7 +27,7 @@ time, mark, audio, video {
 main {
     width: 620px;
     height: 150px;
-	margin: 200px auto;
+	margin: 50px auto;
 	background: #f0f0f0;	
 	box-shadow: 0 0 5px rgba(0, 0, 0, .3);	    
     border: 1px solid darkgray;
@@ -171,5 +171,3 @@ a > img {
     text-decoration: none;
     color: #666;
 }
-
-

@@ -79,7 +79,7 @@ header {
 .button-link--m,
 .button-link--s {
     border: 3px solid #eec9a2;
-    color: #ccc;
+    color: #fff;
     text-decoration: none;
     padding: 10px 20px;
 }
@@ -299,7 +299,9 @@ header {
     z-index: 10000;
 }
 
-.search:focus {
+.search:focus,
+.email:focus,
+.submit:focus {
     outline: none;
 }
 
